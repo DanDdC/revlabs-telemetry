@@ -20,6 +20,18 @@ uv pip install --python .venv/Scripts/python.exe -e ".[dev]"
 
 Em Linux/macOS, use `.venv/bin/python`.
 
+### Quanto capturar?
+
+- **Validação rápida do parser:** 60–120 segundos.
+- **Track map:** 3–5 voltas limpas no mínimo; 10+ é melhor.
+- **Calibração de tempo:** quanto mais voltas limpas, melhor.
+
+Para 10 voltas em Interlagos (~100 s cada) mais outlap, use algo como:
+
+```bash
+.venv/Scripts/python.exe -m revlabs_probe probe --ps-ip 192.168.1.42 --duration 1200 --out sample
+```
+
 ## Saída
 
 - `sample/raw/packets.jsonl` — pacotes crus em base64
