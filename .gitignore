@@ -1,0 +1,40 @@
+# Local / internal development files (never commit)
+AGENTS.md
+.opencode/
+CONTEXT_PROMPT.md
+docs/plans/
+*.local.md
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
+
+# Tauri / Node
+node_modules/
+dist/
+src-tauri/target/
+
+# Local app data
+*.db
+*.db-journal
+recordings/
+exports/

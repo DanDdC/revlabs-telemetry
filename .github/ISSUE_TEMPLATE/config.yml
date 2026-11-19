@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discussão geral
+    url: https://github.com/DanDdC
+    about: Para dúvidas que não são bugs ou features.
