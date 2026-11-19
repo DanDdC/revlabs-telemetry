@@ -2,12 +2,8 @@ name: Probe CI
 
 on:
   push:
-    paths:
-      - "probe/**"
-      - ".github/workflows/probe-ci.yml"
+    branches: [main]
   pull_request:
-    paths:
-      - "probe/**"
 
 jobs:
   test:
