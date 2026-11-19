@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "revlabs-probe"
+version = "0.1.0"
+description = "Probe CLI para captura de telemetria GT7 do RevLabs"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["pycryptodome>=3.20"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[project.scripts]
+revlabs-probe = "revlabs_probe.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["revlabs_probe"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

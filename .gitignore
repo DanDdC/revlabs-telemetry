@@ -38,3 +38,4 @@ src-tauri/target/
 *.db-journal
 recordings/
 exports/
+probe/sample/

@@ -33,6 +33,17 @@ Funciona offline. O upload para o site é opcional.
 - export `.revlabs`;
 - upload futuro.
 
+## Probe
+
+O primeiro entregável está em [`probe/`](probe/README.md):
+
+```bash
+cd probe
+uv venv .venv
+uv pip install --python .venv/Scripts/python.exe -e ".[dev]"
+.venv/Scripts/python.exe -m revlabs_probe probe --ps-ip 192.168.1.42 --out sample
+```
+
 ## Limitações conhecidas
 
 - GT7 entrega apenas o carro do jogador via UDP.
